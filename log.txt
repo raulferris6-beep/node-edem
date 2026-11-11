@@ -1,0 +1,4 @@
+[2026-11-11 19:05:59] [INFO] Aplicación iniciada
+[2026-11-11 19:05:59] [WARN] Memoria disponible baja
+[2026-11-11 19:05:59] [ERROR] No se pudo conectar con el servidor
+[2026-11-11 19:05:59] [DEBUG] Ejecutando función principal
