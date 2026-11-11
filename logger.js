@@ -1,3 +1,5 @@
+import chalk from 'chalk'
+
 const fechaActual = () => {
   const fecha = new Date()
   const dos = (n) => String(n).padStart(2, '0')
@@ -6,17 +8,17 @@ const fechaActual = () => {
 }
 
 export const info = (mensaje) => {
-  console.log(`[${fechaActual()}] [INFO] ${mensaje}`)
+  console.log(chalk.blue(`[${fechaActual()}] [INFO] ${mensaje}`))
 }
 
 export const warn = (mensaje) => {
-  console.log(`[${fechaActual()}] [WARN] ${mensaje}`)
+  console.log(chalk.yellow(`[${fechaActual()}] [WARN] ${mensaje}`))
 }
 
 export const error = (mensaje) => {
-  console.log(`[${fechaActual()}] [ERROR] ${mensaje}`)
+  console.log(chalk.red(`[${fechaActual()}] [ERROR] ${mensaje}`))
 }
 
 export const debug = (mensaje) => {
-  console.log(`[${fechaActual()}] [DEBUG] ${mensaje}`)
+  console.log(chalk.gray(`[${fechaActual()}] [DEBUG] ${mensaje}`))
 }
